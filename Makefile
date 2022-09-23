@@ -1,5 +1,5 @@
 PKG_NAME := libcloudproviders
-URL = https://gitlab.gnome.org/World/libcloudproviders/uploads/e97a550ebbf85e753c4df5692a86b39d/libcloudproviders-0.3.0.tar.xz
+URL = https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.1/libcloudproviders-0.3.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
