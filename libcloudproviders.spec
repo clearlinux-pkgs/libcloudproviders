@@ -4,10 +4,10 @@
 # Using build pattern: meson
 #
 Name     : libcloudproviders
-Version  : 0.3.3
-Release  : 4
-URL      : https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.3/libcloudproviders-0.3.3.tar.gz
-Source0  : https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.3/libcloudproviders-0.3.3.tar.gz
+Version  : 0.3.4
+Release  : 5
+URL      : https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.4/libcloudproviders-0.3.4.tar.gz
+Source0  : https://gitlab.gnome.org/World/libcloudproviders/-/archive/0.3.4/libcloudproviders-0.3.4.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : LGPL-3.0
@@ -65,10 +65,10 @@ license components for the libcloudproviders package.
 
 
 %prep
-%setup -q -n libcloudproviders-0.3.3
-cd %{_builddir}/libcloudproviders-0.3.3
+%setup -q -n libcloudproviders-0.3.4
+cd %{_builddir}/libcloudproviders-0.3.4
 pushd ..
-cp -a libcloudproviders-0.3.3 buildavx2
+cp -a libcloudproviders-0.3.4 buildavx2
 popd
 
 %build
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1694010004
+export SOURCE_DATE_EPOCH=1694037982
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -121,9 +121,9 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %files lib
 %defattr(-,root,root,-)
-/V3/usr/lib64/libcloudproviders.so.0.3.3
+/V3/usr/lib64/libcloudproviders.so.0.3.4
 /usr/lib64/libcloudproviders.so.0
-/usr/lib64/libcloudproviders.so.0.3.3
+/usr/lib64/libcloudproviders.so.0.3.4
 
 %files license
 %defattr(0644,root,root,0755)
